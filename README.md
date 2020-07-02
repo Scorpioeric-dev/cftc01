@@ -37,3 +37,20 @@ You are able to create up to 3 different users who get their own unique events w
     }
 ```
 4. Hit the get session endpoint to receive all the data that satisfies the use cases listed in the challenge. 
+
+## Requirements
+
+### Return all failed login events for all users
+Created a variable on sessions that tracks all failed login events, if a user tries to login it increments by one.
+
+### Return all login events for a single user
+Created a variable on session for any single user. Whether they login successfully or not it increments by one.
+
+### Return all events for the day before last
+Created a variable that will get the current date and subtract it by 2 giving the day before.
+I use this variable to push the events of any user that match the condition into an array. 
+
+### Return all events for the week before not including session timeout
+Created a variable that will get the current date and subtract it by 2 giving the day before.
+I use this variable to push the events of any user that match the condition into an array. 
+
